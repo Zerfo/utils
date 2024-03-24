@@ -1,5 +1,5 @@
 {
-	"name": "utils",
+	"name": "@zerfo/utils",
 	"version": "0.0.1",
 	"description": "Fast, small and purely functional utility library",
 	"author": "Nikolay Smekalin <nikolay.smekalin@gmail.com>",
