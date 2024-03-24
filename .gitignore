@@ -1,0 +1,10 @@
+node_modules
+build
+dist
+coverage
+ts_temp
+.DS_Store
+.idea/
+.vscode/
+.history
+.npmrc

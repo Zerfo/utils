@@ -1,0 +1,71 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tests:
+    name: Tests
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Tests
+        run: npm run test:ci
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2
+        env:
+          github-token: ${{ secrets.COVERALLS_TOKEN }}
+
+  release:
+    name: Release
+
+    needs: tests
+
+    if: "!contains(github.event.head_commit.message, 'chore(release)')"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+            node-version: '18.x'
+            registry-url: 'https://registry.npmjs.org'
+            scope: '@zerfo'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Copy release files
+        run: npm run copy-release-files
+
+      - name: Initialize Git user
+        run: |
+          git config --global user.name 'zerfo'
+          git config --global user.email 'nikolay.smekalin@gmail.com'
+
+      - name: Initialize NPM config
+        run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Release
+        run: npm run release:ci
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,22 @@
+{
+	"git": {
+    "requireBranch": "master",
+		"commitMessage": "chore(release): version ${version}",
+		"tagName": "v${version}"
+	},
+	"github": {
+		"release": true,
+		"releaseName": "Release v${version}"
+	},
+	"npm": {
+    "publish": true,
+		"publishPath": "./build",
+		"publishArgs": ["--access=public"]
+	},
+	"plugins": {
+		"@release-it/conventional-changelog": {
+			"preset": "conventionalcommits",
+			"infile": "CHANGELOG.md"
+		}
+	}
+}
