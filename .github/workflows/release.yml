@@ -1,0 +1,42 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    if: "!contains(github.event.head_commit.message, 'chore(release)')"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Initialize Git user
+        run: |
+          git config --global user.name 'zerfo'
+          git config --global user.email 'nikolay.smekalin@gmail.com'
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.NPM_PUBLISH_KEY }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Copy release files
+        run: npm run copy-release-files
+
+      - name: Release
+        run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
