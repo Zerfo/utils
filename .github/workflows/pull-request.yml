@@ -1,0 +1,39 @@
+name: pull-request
+
+run-name: Run CI for ${{ github.head_ref }}
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  Tests:
+    name: Tests
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Tests
+        run: npm run test:ci
+
+  Build:
+    name: Build
+
+    runs-on: ubuntu-latest
+
+    needs: [Tests]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
