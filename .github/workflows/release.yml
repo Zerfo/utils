@@ -52,7 +52,13 @@ jobs:
       - name: Copy release files
         run: npm run copy-release-files
 
+      - name: Initialize Git user
+      run: |
+        git config --global user.name 'zerfo'
+        git config --global user.email 'zerfo@users.noreply.github.com'
+
       - name: Release
         run: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
