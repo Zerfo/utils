@@ -38,7 +38,7 @@ jobs:
       - name: Check release
         run: npm run release:dry
 
-       - name: Coveralls
+      - name: Coveralls
         uses: coverallsapp/github-action@master
         env:
           COVERALLS_FLAG_NAME: run-${{ matrix.node }}
