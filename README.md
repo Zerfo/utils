@@ -38,3 +38,9 @@ $ yarn add @zerfo/utils
 - 6.4.0 and higher
 
 ## Bundle size
+
+| Library | Unpacked Size |
+| --- | --- |
+| lodash | 1.41 MB |
+| ramda | 1.17 MB |
+| @zerfo/utils |9.19 kB |
