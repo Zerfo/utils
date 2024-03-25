@@ -4,10 +4,6 @@
 		"commitMessage": "chore(release): version ${version}",
 		"tagName": "v${version}"
 	},
-  "hooks": {
-    "before:init": ["git pull"],
-    "after:bump": "npx auto-changelog -p"
-  },
 	"github": {
 		"release": true,
 		"releaseName": "Release v${version}"
