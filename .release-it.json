@@ -9,7 +9,6 @@
 	},
 	"npm": {
     "publish": true,
-    "skipChecks": false,
 		"publishPath": "./build",
 		"publishArgs": ["--access=public"]
 	},

@@ -13,7 +13,7 @@
 		"build": "tsc && babel ./ts_temp -d build",
 		"test": "jest --coverage",
 		"test:ci": "npm run test -- --maxWorkers=50%",
-		"release": "release-it",
+		"release": "release-it --ci",
 		"release:dry": "release-it --dry-run",
 		"copy-release-files": "node tools/copy-release-files.js"
 	},
