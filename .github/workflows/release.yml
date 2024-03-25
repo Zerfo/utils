@@ -36,6 +36,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -54,11 +56,16 @@ jobs:
 
       - name: Initialize Git user
         run: |
-          git config --global user.name 'zerfo'
-          git config --global user.email 'zerfo@users.noreply.github.com'
+          git config --global user.name 'Zerfo'
+          git config --global user.email 'nikolay.smekalin@gmail.com'
+
+      - name: Initialize NPM config
+        run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
 
       - name: Release
-        run: npm run release
+        run: npm run release --ci
         env:
           NPM_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
