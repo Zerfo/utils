@@ -1,4 +1,4 @@
-# Zerfo Utils [![Coverage Status](https://coveralls.io/repos/github/Zerfo/utils/badge.svg?branch=master)](https://coveralls.io/github/Zerfo/utils?branch=master)
+# Zerfo Utils [![NPM Version](https://img.shields.io/npm/v/%40zerfo%2Futils)](https://www.npmjs.com/package/@zerfo/utils) [![NPM License](https://img.shields.io/npm/l/%40zerfo%2Futils)](https://github.com/Zerfo/utils/blob/master/LICENSE) [![Coverage Status](https://coveralls.io/repos/github/Zerfo/utils/badge.svg?branch=master)](https://coveralls.io/github/Zerfo/utils?branch=master)
 
 > Fast, small and purely functional utility library
 
