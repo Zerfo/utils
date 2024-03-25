@@ -1,4 +1,4 @@
-# Zerfo Utils
+# Zerfo Utils [![Coverage Status](https://coveralls.io/repos/github/Zerfo/utils/badge.svg?branch=master)](https://coveralls.io/github/Zerfo/utils?branch=master)
 
 > Fast, small and purely functional utility library
 
