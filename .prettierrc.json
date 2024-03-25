@@ -5,5 +5,5 @@
 	"proseWrap": "never",
 	"arrowParens": "always",
 	"printWidth": 120,
-	"tabWidth": 4
+	"tabWidth": 2
 }
