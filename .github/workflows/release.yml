@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Initialize Git user
         run: |
-          git config --global user.name 'zerfo'
+          git config --global user.name 'Zerfo'
           git config --global user.email 'nikolay.smekalin@gmail.com'
 
       - uses: actions/checkout@v3
@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Tests
+        run: npm run test:ci
+
       - name: Build
         run: npm run build
 
@@ -40,3 +43,8 @@ jobs:
         run: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2
+        env:
+          github-token: ${{ secrets.COVERALLS_TOKEN }}
