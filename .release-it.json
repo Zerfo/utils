@@ -4,9 +4,13 @@
 		"tagName": "v${version}"
 	},
 	"github": {
-		"release": true
+		"release": true,
+		"releaseName": "Release v${version}",
+		"tokenRef": "GITHUB_TOKEN"
 	},
 	"npm": {
+    "publish": true,
+    "skipChecks": false,
 		"publishPath": "./build",
 		"publishArgs": ["--access=public"]
 	},

@@ -4,7 +4,10 @@
 	"description": "Fast, small and purely functional utility library",
 	"author": "Nikolay Smekalin <nikolay.smekalin@gmail.com>",
 	"license": "MIT",
-	"repository": "https://github.com/Zerfo/utils",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Zerfo/utils.git"
+	},
 	"bugs": "https://github.com/Zerfo/utils/issues",
 	"scripts": {
 		"build": "tsc && babel ./ts_temp -d build",
