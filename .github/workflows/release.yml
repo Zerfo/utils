@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Install dependencies
-        run: yarn
+        run: npm ci
 
       - name: Tests
-        run: yarn test:ci
+        run: npm run test:ci
 
       - name: Coveralls
         uses: coverallsapp/github-action@v2
@@ -46,15 +46,15 @@ jobs:
             scope: '@zerfo'
 
       - name: Install dependencies
-        run: yarn
+        run: npm run
 
       - name: Build
-        run: yarn build
+        run: npm run build
 
       - name: Copy release files
-        run: yarn copy-release-files
+        run: npm run copy-release-files
 
       - name: Release
-        run: yarn release
+        run: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
