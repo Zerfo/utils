@@ -6,45 +6,48 @@ on:
       - master
 
 jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Tests
+      run: yarn test:ci
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@v2
+      env:
+        github-token: ${{ secrets.COVERALLS_TOKEN }}
+
   release:
     if: "!contains(github.event.head_commit.message, 'chore(release)')"
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: write
+
     steps:
-      - name: Initialize Git user
-        run: |
-          git config --global user.name 'Zerfo'
-          git config --global user.email 'nikolay.smekalin@gmail.com'
+      - uses: actions/checkout@v4
 
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
         with:
-          fetch-depth: 0
-          token: ${{ secrets.NPM_PUBLISH_KEY }}
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          registry-url: 'https://registry.npmjs.org'
+            node-version: '18.x'
+            registry-url: 'https://registry.npmjs.org'
+            scope: '@zerfo'
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Tests
-        run: npm run test:ci
+        run: yarn
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Copy release files
-        run: npm run copy-release-files
+        run: yarn copy-release-files
 
       - name: Release
-        run: npm run release
+        run: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
-
-      - name: Coveralls
-        uses: coverallsapp/github-action@v2
-        env:
-          github-token: ${{ secrets.COVERALLS_TOKEN }}
