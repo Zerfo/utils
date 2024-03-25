@@ -13,14 +13,12 @@ $ yarn add @zerfo/utils
 
 ## Features
 
-## Structure of the library
-* [`/`](https://github.com/Zerfo/utils/tree/master/src) - root contains utilities do not satisfy any of the above categories or are universal
-* [`/object`](https://github.com/Zerfo/utils/tree/master/src/object) – for objects
-* [`/string`](https://github.com/Zerfo/utils/tree/master/src/string) – for strings
-* [`/promise`](https://github.com/Zerfo/utils/tree/master/src/promise) – for promises
-* [`/array`](https://github.com/Zerfo/utils/tree/master/src/array) – for arrays or array-like objects
-* [`/function`](https://github.com/Zerfo/utils/tree/master/src/function) – for functions – composition, currying and so on, also a set of simple functions (noop, T, F)
-* [`/is`](https://github.com/Zerfo/utils/tree/master/src/is) – set of type checking methods
+## Functions of the library
+['capitalize'](https://github.com/Zerfo/utils/tree/master/src/capitalize/capitalize.ts) - Returns the capitalized version of a string.
+['isArray'](https://github.com/Zerfo/utils/tree/master/src/isArray/isArray.ts) - Checks if `test` is array.
+['isEqual'](https://github.com/Zerfo/utils/tree/master/src/isEqual/isEqual.ts) - Returns `true` if its arguments are equivalent, `false` otherwise.
+['negate'](https://github.com/Zerfo/utils/tree/master/src/negate/negate.ts) - Negates it is argument
+['upperFirst'](https://github.com/Zerfo/utils/tree/master/src/upperFirst/upperFirst.ts) - Converts the first character of string to upper case and returns the new string.
 
 ## Usage
 
