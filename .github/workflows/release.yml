@@ -53,9 +53,9 @@ jobs:
         run: npm run copy-release-files
 
       - name: Initialize Git user
-      run: |
-        git config --global user.name 'zerfo'
-        git config --global user.email 'zerfo@users.noreply.github.com'
+        run: |
+          git config --global user.name 'zerfo'
+          git config --global user.email 'zerfo@users.noreply.github.com'
 
       - name: Release
         run: npm run release
