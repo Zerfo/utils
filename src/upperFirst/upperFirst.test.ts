@@ -1,6 +1,6 @@
 import upperFirst from '../upperFirst';
 
-describe('utils/string/upperFirst', () => {
+describe('utils/upperFirst', () => {
 	it.each([
 		['', ''],
 		['foo', 'Foo'],
