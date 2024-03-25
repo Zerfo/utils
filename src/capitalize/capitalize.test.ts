@@ -1,6 +1,6 @@
 import capitalize from '../capitalize';
 
-describe('utils/string/capitalize', () => {
+describe('utils/capitalize', () => {
   it('should capitalize the first letter of a string', () => {
 		expect(capitalize('hello')).toBe('Hello');
 	});
