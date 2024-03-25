@@ -14,6 +14,7 @@
 		"test": "jest --coverage",
 		"test:ci": "npm run test -- --maxWorkers=50%",
 		"release": "release-it",
+		"release:ci": "release-it --ci --no-requireCleanWorkingDir",
 		"release:dry": "release-it --dry-run",
 		"copy-release-files": "node tools/copy-release-files.js"
 	},
