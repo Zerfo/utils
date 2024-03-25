@@ -15,6 +15,7 @@ $ yarn add @zerfo/utils
 
 ## Functions of the library
 * [capitalize](https://github.com/Zerfo/utils/tree/master/src/capitalize/capitalize.ts) - Returns the capitalized version of a string.
+* [formatSum](https://github.com/Zerfo/utils/tree/master/src/formatSum/formatSum.ts) - Returns the formatted value.
 * [isArray](https://github.com/Zerfo/utils/tree/master/src/isArray/isArray.ts) - Checks if `test` is array.
 * [isEqual](https://github.com/Zerfo/utils/tree/master/src/isEqual/isEqual.ts) - Returns `true` if its arguments are equivalent, `false` otherwise.
 * [negate](https://github.com/Zerfo/utils/tree/master/src/negate/negate.ts) - Negates it is argument
