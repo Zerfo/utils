@@ -3216,6 +3216,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+recursive-readdir-sync@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/recursive-readdir-sync/-/recursive-readdir-sync-1.0.6.tgz"
+  integrity sha512-QhkBh/V7T3L2m8FrwZEZ/VnSZU35bv7DSy/VlKVfcq10zvwwuxeuDLH7DZYFGHFyXefHchZmsHFLELR7poGjog==
+
 regenerate-unicode-properties@^10.1.0:
   version "10.1.1"
   resolved "https://registry.npmjs.org/regenerate-unicode-properties/-/regenerate-unicode-properties-10.1.1.tgz"
