@@ -1,6 +1,6 @@
 {
 	"name": "@zerfo/utils",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Fast, small and purely functional utility library",
 	"author": "Nikolay Smekalin <nikolay.smekalin@gmail.com>",
 	"license": "MIT",
@@ -17,7 +17,7 @@
 		"release:ci": "release-it --ci --no-git.requireCleanWorkingDir --verbose",
 		"release:dry": "release-it --dry-run",
 		"copy-release-files": "node tools/copy-release-files.js",
-    "prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
+		"prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
 		"benchmark": "ts-node --project tsconfig.benchmark.json runBenchmark.ts"
 	},
 	"keywords": [
