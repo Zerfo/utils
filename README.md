@@ -24,6 +24,7 @@ $ yarn add @zerfo/utils
 * [isNil](https://github.com/Zerfo/utils/tree/master/src/isNil/isNil.ts) - Checks if `test` is nil (null or undefined).
 * [isNumber](https://github.com/Zerfo/utils/tree/master/src/isNumber/isNumber.ts) - Checks if `test` is number.
 * [isObject](https://github.com/Zerfo/utils/tree/master/src/isObject/isObject.ts) - Checks if `test` is object.
+* [isPromise](https://github.com/Zerfo/utils/tree/master/src/isPromise/isPromise.ts) - Checks if `test` is Promise.
 * [isString](https://github.com/Zerfo/utils/tree/master/src/isString/isString.ts) - Checks if `test` is string.
 * [isUndefined](https://github.com/Zerfo/utils/tree/master/src/isUndefined/isUndefined.ts) - Checks if `test` is `undefined`.
 * [negate](https://github.com/Zerfo/utils/tree/master/src/negate/negate.ts) - Negates it is argument
