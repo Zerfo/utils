@@ -12,6 +12,12 @@ $ yarn add @zerfo/utils
 ```
 
 ## Features
+- [Fast](#benchmarks)
+- [Small](#bundle-size)
+- [Fully tested](https://coveralls.io/github/Zerfo/utils)
+- Documented
+- Purely functional
+- Modern codebase
 
 ## Functions of the library
 * [capitalize](https://github.com/Zerfo/utils/tree/master/src/capitalize/capitalize.ts) - Returns the capitalized version of a string.
@@ -32,9 +38,12 @@ $ yarn add @zerfo/utils
 * [negate](https://github.com/Zerfo/utils/tree/master/src/negate/negate.ts) - Negates it is argument
 * [upperFirst](https://github.com/Zerfo/utils/tree/master/src/upperFirst/upperFirst.ts) - Converts the first character of string to upper case and returns the new string.
 
-## Usage
-
 ## Benchmarks
+```bash
+$ npm run benchmark
+```
+
+[Banchmark results](https://github.com/Zerfo/utils/tree/master/BENCHMARK.md)
 
 ## Browser support
 
@@ -55,4 +64,4 @@ $ yarn add @zerfo/utils
 | --- | --- |
 | lodash | 1.41 MB |
 | ramda | 1.17 MB |
-| @zerfo/utils |9.19 kB |
+| @zerfo/utils | 35.5 kB |
