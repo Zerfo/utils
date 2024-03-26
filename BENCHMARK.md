@@ -1,4 +1,4 @@
-# Contributing
+# Benchmarks
 
 | Utility | Lodash | Ramda | utils |
 | --- | --- | --- | --- |
