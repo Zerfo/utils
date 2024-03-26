@@ -26,6 +26,7 @@ $ yarn add @zerfo/utils
 * [isObject](https://github.com/Zerfo/utils/tree/master/src/isObject/isObject.ts) - Checks if `test` is object.
 * [isPromise](https://github.com/Zerfo/utils/tree/master/src/isPromise/isPromise.ts) - Checks if `test` is Promise.
 * [isShallowEqual](https://github.com/Zerfo/utils/tree/master/src/isShallowEqual/isShallowEqual.ts) - Returns `true` if its arguments are equivalent is shallow equal terms, `false` otherwise.
+* [isStrictEqual](https://github.com/Zerfo/utils/tree/master/src/isStrictEqual/isStrictEqual.ts) - Returns `true` if its arguments are equivalent is same value zero terms, `false` otherwise.
 * [isString](https://github.com/Zerfo/utils/tree/master/src/isString/isString.ts) - Checks if `test` is string.
 * [isUndefined](https://github.com/Zerfo/utils/tree/master/src/isUndefined/isUndefined.ts) - Checks if `test` is `undefined`.
 * [negate](https://github.com/Zerfo/utils/tree/master/src/negate/negate.ts) - Negates it is argument
