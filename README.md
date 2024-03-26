@@ -20,6 +20,7 @@ $ yarn add @zerfo/utils
 * [isBoolean](https://github.com/Zerfo/utils/tree/master/src/isBoolean/isBoolean.ts) - Checks if `test` is boolean.
 * [isEmpty](https://github.com/Zerfo/utils/tree/master/src/isEmpty/isEmpty.ts) - Checks if `test` is empty.
 * [isEqual](https://github.com/Zerfo/utils/tree/master/src/isEqual/isEqual.ts) - Returns `true` if its arguments are equivalent, `false` otherwise.
+* [isFunction](https://github.com/Zerfo/utils/tree/master/src/isFunction/isFunction.ts) - Checks if `test` is function.
 * [isNil](https://github.com/Zerfo/utils/tree/master/src/isNil/isNil.ts) - Checks if `test` is nil (null or undefined).
 * [isObject](https://github.com/Zerfo/utils/tree/master/src/isObject/isObject.ts) - Checks if `test` is object.
 * [isString](https://github.com/Zerfo/utils/tree/master/src/isString/isString.ts) - Checks if `test` is string.
