@@ -17,6 +17,7 @@ $ yarn add @zerfo/utils
 * [capitalize](https://github.com/Zerfo/utils/tree/master/src/capitalize/capitalize.ts) - Returns the capitalized version of a string.
 * [formatSum](https://github.com/Zerfo/utils/tree/master/src/formatSum/formatSum.ts) - Returns the formatted value.
 * [isArray](https://github.com/Zerfo/utils/tree/master/src/isArray/isArray.ts) - Checks if `test` is array.
+* [isBoolean](https://github.com/Zerfo/utils/tree/master/src/isBoolean/isBoolean.ts) - Checks if `test` is boolean.
 * [isEmpty](https://github.com/Zerfo/utils/tree/master/src/isEmpty/isEmpty.ts) - Checks if `test` is empty.
 * [isEqual](https://github.com/Zerfo/utils/tree/master/src/isEqual/isEqual.ts) - Returns `true` if its arguments are equivalent, `false` otherwise.
 * [isNil](https://github.com/Zerfo/utils/tree/master/src/isNil/isNil.ts) - Checks if `test` is nil (null or undefined).
