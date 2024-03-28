@@ -12,6 +12,7 @@
 | isNil | --- | --- | 213,829,453 ops/sec |
 | isNumber | --- | --- | 212,730,391 ops/sec |
 | isObject | --- | --- | 213,938,721 ops/sec |
+| isPalindrome | --- | --- | 6,656,194 ops/sec |
 | isPromise | --- | --- | 66,163,184 ops/sec |
 | isShallowEqual | --- | --- | 38,103,230 ops/sec |
 | isStrictEqual | --- | --- | 2,238,702,223 ops/sec |

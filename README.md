@@ -30,6 +30,7 @@ $ yarn add @zerfo/utils
 * [isNil](https://github.com/Zerfo/utils/tree/master/src/isNil/isNil.ts) - Checks if `test` is nil (null or undefined).
 * [isNumber](https://github.com/Zerfo/utils/tree/master/src/isNumber/isNumber.ts) - Checks if `test` is number.
 * [isObject](https://github.com/Zerfo/utils/tree/master/src/isObject/isObject.ts) - Checks if `test` is object.
+* [isPalindrome](https://github.com/Zerfo/utils/tree/master/src/isPalindrome/isPalindrome.ts) - Checks if given `str` is a palindrome.
 * [isPromise](https://github.com/Zerfo/utils/tree/master/src/isPromise/isPromise.ts) - Checks if `test` is Promise.
 * [isShallowEqual](https://github.com/Zerfo/utils/tree/master/src/isShallowEqual/isShallowEqual.ts) - Returns `true` if its arguments are equivalent is shallow equal terms, `false` otherwise.
 * [isStrictEqual](https://github.com/Zerfo/utils/tree/master/src/isStrictEqual/isStrictEqual.ts) - Returns `true` if its arguments are equivalent is same value zero terms, `false` otherwise.
