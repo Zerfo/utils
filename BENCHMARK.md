@@ -4,6 +4,7 @@
 | --- | --- | --- | --- |
 | capitalize | 30,232,372 ops/sec | --- | 43,989,824 ops/sec |
 | formatSum | --- | --- | 1,850,773 ops/sec |
+| getUserPlatform | --- | --- | --- |
 | isArray | 1,121,597,161 ops/sec | --- | 1,120,244,767 ops/sec |
 | isBoolean | --- | --- | 218,795,309 ops/sec |
 | isEmpty | 11,507,643 ops/sec | 1,660,660 ops/sec | 4,861,922 ops/sec |

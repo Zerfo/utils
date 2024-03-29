@@ -22,6 +22,7 @@ $ yarn add @zerfo/utils
 ## Functions of the library
 * [capitalize](https://github.com/Zerfo/utils/tree/master/src/capitalize/capitalize.ts) - Returns the capitalized version of a string.
 * [formatSum](https://github.com/Zerfo/utils/tree/master/src/formatSum/formatSum.ts) - Returns the formatted value.
+* [formatSum](https://github.com/Zerfo/utils/tree/master/src/getUserPlatform/getUserPlatform.ts) - Сhecks the userAgent of the user's browser and returns the platform used.
 * [isArray](https://github.com/Zerfo/utils/tree/master/src/isArray/isArray.ts) - Checks if `test` is array.
 * [isBoolean](https://github.com/Zerfo/utils/tree/master/src/isBoolean/isBoolean.ts) - Checks if `test` is boolean.
 * [isEmpty](https://github.com/Zerfo/utils/tree/master/src/isEmpty/isEmpty.ts) - Checks if `test` is empty.
