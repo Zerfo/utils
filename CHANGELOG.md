@@ -1,5 +1,15 @@
 
 
+## [0.5.0](https://github.com/Zerfo/utils/compare/v0.4.0...v0.5.0) (2024-03-29)
+
+
+### Features
+
+* add getUserPlatform impl ([d12efbb](https://github.com/Zerfo/utils/commit/d12efbb47ac03d8b29d06201c5a9521fbacd708c))
+* add isPalindrome impl ([752472a](https://github.com/Zerfo/utils/commit/752472ac38d8413fa265073512ca1b05d8671743))
+* update BENCHMARK.md ([e22f9d1](https://github.com/Zerfo/utils/commit/e22f9d1e632dd76f4149fd0b6cfb96351ffd181f))
+* update README.md & BENCHMARK.md ([d07c463](https://github.com/Zerfo/utils/commit/d07c4638345bddf1c3f39ccdbd57f657e4ff1e77))
+
 ## [0.4.0](https://github.com/Zerfo/utils/compare/v0.2.0...v0.4.0) (2024-03-26)
 
 
