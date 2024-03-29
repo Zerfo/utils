@@ -1,6 +1,6 @@
 {
 	"name": "@zerfo/utils",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"description": "Fast, small and purely functional utility library",
 	"author": "Nikolay Smekalin <nikolay.smekalin@gmail.com>",
 	"license": "MIT",
